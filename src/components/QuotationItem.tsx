@@ -20,7 +20,7 @@ export default function QuotationItem({ item }: QuotationItemProps) {
   return (
     <article className="max-w-6xl mb-8 mx-auto bg-white shadow-lg py-6">
       <section className="px-7 pb-5">
-        <div className="flex justify-between gap-10">
+        <div className="flex flex-wrap justify-between gap-10">
           <div>
             <h3 className="text-lg text-blue-900">Medicamento indicado:</h3>
             <p className="text-gray-800 font-bold">{item.prescription.productName}</p>
