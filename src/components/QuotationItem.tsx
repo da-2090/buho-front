@@ -55,12 +55,6 @@ export default function QuotationItem({ item }: QuotationItemProps) {
         </div>
         </div>
       </div>
-{/*       <div className="grid grid-cols-1 gap-6 px-6 sm:grid-cols-2 md:grid-cols-3">
-        <ProductCard product={item.selectedProduct} higlighted />
-        {item.alternatives.map((alternative, index) => (
-          <ProductCard key={index} product={alternative} />
-        ))}
-      </div> */}
     </article>
   );
 }
