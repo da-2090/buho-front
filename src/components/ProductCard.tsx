@@ -1,3 +1,4 @@
+import { Product } from "@/types/types";
 import { Currency } from "@/utils";
 
 interface ProductCardProps {

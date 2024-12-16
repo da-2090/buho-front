@@ -1,3 +1,4 @@
+import { QuotationProduct } from "@/types/types";
 import ProductCard from "@/components/ProductCard";
 import { Currency } from "@/utils";
 

@@ -1,15 +1,10 @@
-interface Address {
+export interface Address {
   address1: string;
   region: string;
   commune: string;
 }
 
-interface Patient {
-  name: string;
-  address: Address;
-}
-
-interface PrescriptionItem {
+export interface PrescriptionItem {
   externalId: string;
   productName: string;
   pharmaceuticForm: string;
@@ -19,13 +14,13 @@ interface PrescriptionItem {
   treatmentDuration: number;
 }
 
-interface Prescription {
+export interface Prescription {
   name: string;
   address: Address;
   prescriptionItems: PrescriptionItem[];
 }
 
-interface Product {
+export interface Product {
   id: string;
   name: string;
   minPrice: number;
@@ -39,20 +34,20 @@ interface Product {
   externalId: string;
 }
 
-interface Price {
+export interface Price {
   price: number;
   stock: number;
   pharmacyId: number;
 }
 
-interface Alternative {
+export interface Alternative {
   productId: string;
   productName: string;
   concentration: string;
   price: number;
 };
 
-interface QuotationProduct {
+export interface QuotationProduct {
   prescription: PrescriptionItem;
   selectedProduct: Product;
   productQuantity: number;
@@ -60,7 +55,7 @@ interface QuotationProduct {
   alternatives: Product[];
 };
 
-interface Quotation {
+export interface Quotation {
   patient: string;
   minPrice: number;
   productQuantity: number;

@@ -1,3 +1,4 @@
+import { QuotationProduct } from "@/types/types";
 import Header from "@/components/Header";
 import QuotationItem from "@/components/QuotationItem";
 import Footer from "@/components/Footer";

@@ -1,3 +1,5 @@
+import { Product, Price, Prescription, Quotation, QuotationProduct } from '@/types/types'
+
 const getProductDetails = async (externalId: string): Promise<Product[]> => {
   let response = await fetch(`https://staging.buhochile.com/products/semantikos/${externalId}`);
   let products: Product[] = await response.json();
